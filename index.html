@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" as="font" href="/assets/fonts/GT-Walsheim-Pro-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="/assets/fonts/GT-Walsheim-Pro-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="/assets/fonts/GT-Walsheim-Pro-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/master.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="favicon.ico">
+  
+  <title>Jockie Music</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jockie Music">
+  <meta property="og:description" content="Jockie Music is the most feature-rich Discord music bot with support for sources such as Spotify, Deezer, Tidal, Apple Music, Soundcloud and more.">
+  <meta property="og:image" content="images/thumbnail.png">
+  <meta name="description" content="Jockie Music is the most feature-rich Discord music bot with support for sources such as Spotify, Deezer, Tidal, Apple Music, Soundcloud and more.">
+  <meta name="theme-color" content="#812D33">
+  <script>const API_URL = "/api";</script>
+  <script>const INVITE_URL = "https://discord.com/oauth2/authorize?client_id=${id}&scope=bot+applications.commands&permissions=8";</script>
+  
+  <script src="js/index.bundle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-163628095-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "UA-163628095-2");
+    </script>
+</head>
+<body onload="masterInitialize(initialize)">
+  <div class="snowflake_container">
+    <div></div>
+  </div>
+  <div class="background_image"></div>
+  <div class="wrapper">
+    <nav class="z2">
+      <a class="h2 fwBold tWhite elmHover" href="/">Jockie Music</a>
+      <div onclick="showNav(this)">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="navoverlay" class="hidden z1">
+        <ul class="navlist">
+          <li><a class="fs18 fwMed tWhite tUp elmHover" href="/faq">faq</a></li>
+          <li><a class="fs18 fwMed tWhite tUp elmHover" href="/commands">commands</a></li>
+          <li><a class="fs18 fwMed tWhite tUp elmHover" href="/status">status</a></li>
+          <li><a class="fs18 fwMed tWhite tUp elmHover" href="https://dashboard.jockiemusic.com/" target="_blank">dashboard</a></li>
+          <li><a class="fs18 fwMed tWhite tUp elmHover" href="https://teespring.com/stores/jockie-music" target="_blank">merch</a></li>
+          <li><a class="fs18 fwMed tWhite tUp elmHover" href="https://discord.gg/nsd3A6Q" target="_blank">support</a></li>
+          <li><a class="fs18 fwMed tWhite tUp elmHover" href="https://www.patreon.com/Jockie" target="_blank">patreon</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="line z2"></div>
+    <div class="content_master front">
+  <div>
+    <img src="images/render_christmas.png" alt="jockie_music_render">
+    <div>
+      <h1 class="catchphrase fwBold tWhite tUp" style="margin:0">Jockie Music<br>1 in 4 Discord Bot</h1>
+      <div class="toggeler tWhite fs20 fwBold" id="front"><a onclick="scrollToElm('dialogue')">More Information <img style="width:16px;height:auto;" src="images/arrow.svg" alt="arrow"></a></div>
+    </div>
+  </div>
+</div>
+<div class="content_master introduction" id="dialogue">
+  <img src="images/pattern_bottom.png" alt="pattern_bottom">
+  <img src="images/pattern_top.png" alt="pattern_top">
+  <div class="dialogue" data_dialogue="1" data_dialogue_settings="default">
+    <div>
+      <p class="fs20 fwReg tWhite" style="max-width:510px;">Remember the times when you had to add all those music bots for your bulky server each with their own prefixes and commands?</p>
+      <a class="red_btn sRadius tWhite elmHover" style="margin-right:15px" onclick="changeSlide(2)">Yes I do</a><a class="white_btn sRadius tWhite elmHover" onclick="changeSlide(4);saveVisit()">No I don't</a>
+    </div>
+    <img src="images/dialogue.png" alt="dialogue"> 
+  </div>
+  <div class="dialogue" data_dialogue="2">
+    <div>
+      <h2 class="fwBold tWhite" style="font-size:23;margin:0">Those days are now over!</h2>
+      <p class="fs20 fwReg tWhite" style="max-width:510px;margin-top:0">With Jockie Music you can have up to 4 dedicated music bots acting as one, meaning, whenever one of the bots is in use the next one in line will join!</p>
+      <a class="red_btn sRadius tWhite elmHover" style="margin-right:15px" onclick="changeSlide(3);saveVisit()">I want the invite links!</a>
+    </div>
+    <img src="images/dialogue_2.png" alt="dialogue_2"> 
+  </div>
+  <div class="dialogue" data_dialogue="3" style="flex-direction:column;">
+    <div>
+      <h1 class="tWhite" style="max-width:500px;text-align:center;">Choose your favorite color, or get them all!</h1>
+    </div>
+    <div class="invBtns"></div>
+  </div>
+  <div class="dialogue" data_dialogue="4" style="flex-direction:column;">
+    <div>
+      <h1 class="tWhite" style="max-width:500px;text-align:center;">Then welcome to a whole new concept of discord bots!</h1>
+    </div>
+    <div class="invBtns"></div>
+  </div>
+</div>
+<div class="snow_footer">
+  <img src="images/snow_footer.png">
+</div>
+  </div>
+  <footer class="wrapper" style="background-color:var(--black_d);text-align:center;">
+    <div class="tWhite fs14 fwReg">Designs & front-end by <a class="footer_link" target="_blank" href="https://bumbleboss.xyz">Mohsen M.</a></div>
+  </footer>
+
+</body></html>
